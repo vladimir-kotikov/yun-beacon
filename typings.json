@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "noble": "registry:dt/noble#0.0.0+20160406120732",
+    "nopt": "registry:dt/nopt#3.0.1+20160317120654"
+  }
+}

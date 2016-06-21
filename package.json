@@ -1,0 +1,25 @@
+{
+  "name": "yun-beacon",
+  "version": "0.0.1",
+  "description": "A small utility to react to nearest BLE devices",
+  "repository": "vladimir-kotikov/yun-beacon",
+  "main": "main.js",
+  "scripts": {
+    "upload": "scp main.js root@192.168.1.68:~/yun-beacon.js",
+    "exec": "scp main.js root@192.168.1.68:~/yun-beacon.js && ssh root@192.168.1.68 -t 'node ~/yun-beacon.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "noble",
+    "yun",
+    "bluetooth",
+    "beacon"
+  ],
+  "author": "Vladimir Kotikov <kotikov.vladimir@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "noble": "^1.6.0",
+    "nopt": "^3.0.6"
+  }
+}
